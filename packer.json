@@ -35,23 +35,12 @@
 			"source": "./scripts/cleanup-packer.ps1",
 			"destination": "C:/cleanup-packer.ps1"
 		},
-        {
-			"type": "file",
-			"source": "./scripts/start-github-runner.ps1",
-			"destination": "C:/start-github-runner.ps1"
-		},
-        {
-			"type": "file",
-			"source": "./scripts/spare-script.ps1",
-			"destination": "C:/spare-script.ps1"
-		},
 		{
 			"type": "powershell",
 			"scripts": [
 				"./scripts/disable-uac.ps1",
 				"./scripts/install-chocolatey.ps1",
-				"./scripts/run-chocolatey.ps1",
-                "./scripts/install-github-runner.ps1"
+				"./scripts/run-chocolatey.ps1"
 			]
 		},
 		{

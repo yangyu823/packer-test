@@ -7,6 +7,6 @@ if((Get-FileHash -Path actions-runner-win-x64-2.298.2.zip -Algorithm SHA256).Has
 # Extract the installer
 Add-Type -AssemblyName System.IO.Compression.FileSystem ; [System.IO.Compression.ZipFile]::ExtractToDirectory("$PWD/actions-runner-win-x64-2.298.2.zip", "$PWD")
 # Create the runner and start the configuration experience
-./config.cmd --url https://github.com/yangyu823/packer-test --token ADNNLNR533OIOC22KEUNR23DMOK4E --unattended
+./config.cmd --url https://github.com/yangyu823/packer-test --token ADNNLNWFASRP63VGFUC5ATDDMO6PS --unattended
 # Run it!
 ./run.cmd

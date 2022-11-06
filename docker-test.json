@@ -65,6 +65,12 @@
             ]
         },
 		{
+            "type": "powershell",
+            "scripts": [
+                "{{ template_dir }}/docker-install/github.ps1"
+            ]
+        },
+		{
 			"type": "powershell",
 			"inline": [
 				"GCESysprep -NoShutdown"
